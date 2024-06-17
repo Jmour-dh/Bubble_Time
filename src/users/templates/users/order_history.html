@@ -1,0 +1,23 @@
+<section class="history">
+
+    <h3>Orders History</h3>
+
+    {% for order_detail in orders_detail %}
+            <div class="bubbles_lists">
+                <p>Order ID: {{ order_detail.order.0 }}</p> 
+                <p>Total: {{ order_detail.order.1 }} €</p> 
+                <p>Status: {{ order_detail.order.2 }}</p>
+               
+                {% for item_data in order_detail.items %}
+                    <div>
+                        <p>Bubble: {{ item_data.1 }}</p> 
+                        <p>Topping: {{ item_data.2 }}</p> 
+                        <p>Sugar: {{ item_data.3 }}</p> 
+                        <p>Size: {{ item_data.4 }}</p> 
+                        <p>P.U: {{ item_data.5 }} €</p> 
+                        <p>Quantity: {{ item_data.6 }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+</section>

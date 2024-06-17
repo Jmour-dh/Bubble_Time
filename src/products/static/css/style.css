@@ -1,0 +1,412 @@
+@import url('reset.css');
+
+/****************************************** HEADER *********************************************************************/ 
+body {
+  background: linear-gradient(0deg,rgb(255, 67, 67) 0%,  rgba(255,145,77,1) 100%);
+  font-family:'fantasy'
+}
+
+/* register & login */
+
+.error ul, .error li  {
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /*background-image: url("../img/bubble.png");*/
+background-position: center;
+background-size: cover;
+
+}
+
+.container_form {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+
+}
+
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.container .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-flex input {
+ height: 50px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.container .remember-forgot {
+  display: flex;
+  justify-content: end;
+  font-size: 14.5px;
+  margin: -15px 0px 15px;
+}
+
+.remember-forgot label input {
+  color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.container .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-decoration-break: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0px 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+header , .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.container_logo img {
+  width: 100px;
+}
+nav , .lien_footer {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav li , li a , .lien_footer {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+nav li a:hover {
+  color: pink;
+}
+
+.gif{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/****************************************** MENU *********************************************************************/ 
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+#bubble{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.bubbles_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.bubble img {
+  width: 40%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+
+.bubble input , .bubble select , .form_bubble input , .form_bubble select {
+  max-width: 190px;
+  height: 40px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 2px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.bubble button , .form_bubble button , .panier button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
+
+.bubble button:hover {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.bubble button:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.bubble button:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.form_bubble{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.formbubble{
+  display: flex;
+  flex-direction: row;
+
+}
+
+/******* PANIER ********************/
+
+.panier , .bubbles_lists {
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.panier ul {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bubbles_lists {
+
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  width: 800px;
+
+}
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/****************************************** PROFILE - UPDATE *********************************************************************/ 
+
+.profile-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.profile-info {
+  margin-bottom: 20px;
+  background-color: #3cb5dd ;
+  border-radius: 4px;
+}
+
+.profile-form {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  font-family: Poppins;
+  box-shadow: 0 0 3px #ddd;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.profile-form input {
+  min-width: 150px;
+  font-family: Poppins;
+  padding: 10px 0 5px 10px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 5px;
+  transition: 0.5s;
+  &:focus + label,
+  &:not(:placeholder-shown) + label {
+    transform: translateY(-30%);
+    font-size: 0.6rem;
+}
+}
+.profile-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-form button:hover {
+  background-color: #45a049;
+}
+
+.profile-form button[type="submit"] {
+  margin-top: 10px;
+}
+
+.delete-form button {
+  padding: 10px;
+  border: 2px solid black;
+  background-color: #cbce15;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-form button:hover {
+  border: 2px solid black;
+  background-color: #6c9dbe;
+}
+
+.testrouge {
+  color: rgb(238, 235, 235);
+  font-weight: 500;
+}
+
